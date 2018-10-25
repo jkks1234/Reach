@@ -11,6 +11,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(function(req, res, next) {
   console.log(req.method, req.url);
+  console.log('Response :'+res);
   next();
 });
 
